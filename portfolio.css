@@ -1,0 +1,146 @@
+/*fonts section*/
+@font-face {
+    font-family: gv;
+    src: url(fonts/Great_Vibes/GreatVibes-Regular.ttf);
+}
+
+@font-face {
+    font-family: lato;
+    src: url(fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: libre;
+    src: url(fonts/Libre/LibreBaskerville-Italic.ttf);
+}
+
+@font-face {
+    font-family: teko;
+    src: url(fonts/Teko/Teko-Regular.ttf);
+}
+
+/* Index(Home) Section CSS  */
+.nav-bar{
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    z-index: 5;
+}
+
+h1.home-title{
+    /* color: white; */
+    padding-bottom: 3%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a.borderless{
+    border: 0;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    font-weight: bold;
+    padding-bottom: 2%;
+}
+
+a.borderless:hover{
+    color: yellow;
+}
+
+i.fa{
+    display: inline-block;
+    border-radius: 50%;
+    /* box-shadow: 0 0 2px #888; */
+    padding: 0.5em 0.6em;
+    background-color: white;
+    color: black;
+}
+
+.mySlides{
+    position: fixed;
+    /* top: 0; */
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    /* background: red; */
+    animation: fade2 ease 45s infinite;
+    animation-delay: 9s;
+    /* transition: width .35s ease-in-out; */
+    -webkit-animation: fade 45s infinite;
+    -webkit-animation-delay: 9s;
+}
+@keyframes fade{
+    0%{opacity: 0;}
+    13%{opacity: 1;}
+    20%{opacity: 0;}
+    93%{opacity: 1;}
+    100%{opacity: 0;}
+}
+@keyframes fade2{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+@-webkit-keyframes fade{
+    0%{opacity: 1;}
+    13%{opacity: 1;}
+    20%{opacity: 0;}
+    93%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+
+/* About Section CSS */
+.body-margin{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+a.about-title{
+    display: block;
+    padding-top: 2%;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.nav-item{
+    color: black;
+    font-weight:500;
+}
+
+.nav-item:hover{
+    color: red;
+}
+
+.profile{
+    margin-top: 4%;
+    margin-bottom: 3%;
+    width: 100%; 
+    height: 650px;
+}
+.nav-tabs{
+    border-bottom: none;
+}
+.aboutMe{
+    padding-right: 10px;
+    font-size: 40px;
+    font-family: libre;
+}
+
+p{
+    font-family: libre;
+}
+
+.icons .fa{
+    display: inline-block;
+    border-radius: 50%;
+    /* box-shadow: 0 0 2px #888; */
+    padding: 0.5em 0.6em;
+    background-color: black;
+    color: white;
+}

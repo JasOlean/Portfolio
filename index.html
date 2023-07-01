@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <h1 class="home-title">JASMINE HTWE</h1>
+        <ul class="list-group">
+            <a class="list-group-item borderless" href="about.html" target="_blank">ABOUT ME</a>
+            <a class="list-group-item borderless" href="learningExperience.html">LEARNING EXPERIENCE</a>
+            <a class="list-group-item borderless" href="academic.html">ACADEMIC</a>
+            <a class="list-group-item borderless" href="#">PROJECTS</a>
+        </ul>
+        <a href="https://www.linkedin.com/"><i class="fa fa-brands fa-linkedin-in"></i></a>
+        <a href="https://mail.google.com"><i class="fa fa-regular fa-envelope"></i></a>
+        <a href="https://www.facebook.com"><i class="fa fa-brands fa-facebook"></i></a>
+    </div>
+    <div>
+        <img class="mySlides" id="img1" src="images/img1.jpg">
+        <img class="mySlides" id="img2" src="images/img2.jpg">
+        <img class="mySlides" id="img3" src="images/img3.jpg">
+        <img class="mySlides" id="img4" src="images/img4.jpeg">
+        <img class="mySlides" id="img5" src="images/img5.jpeg">
+    </div>
+    <script>
+        var myIndex = 0;
+        carousel(); 
+        
+        function carousel(){
+            var img_slide = document.getElementsByClassName("mySlides")
+            console.log(img_slide) // 5 images
+            for(var i = 0; i<img_slide.length; i++){
+                img_slide[i].style.display = "none";
+                // img_slide[i].style.opacity = 0.5;
+            }
+            myIndex++; //6
+            if(myIndex > img_slide.length) {myIndex= 1}
+            img_slide[myIndex-1].style.display = "block";
+            setTimeout(carousel,3000);
+        }
+
+        var icons = document.querySelectorAll(".fa");
+        console.log(icons);
+        icons.forEach(icon => {
+            icon.addEventListener("mouseover", e=>{
+                icons.forEach(othericon =>{
+                    if(othericon !== icon){
+                        othericon.style.opacity = 0.5;
+                    }
+                })
+            })
+
+            icon.addEventListener("mouseout", e=>{
+                icons.forEach(othericon =>{
+                    if(othericon !== icon){
+                        othericon.style.opacity = 1;
+                    }
+                })
+            })
+        })
+
+    </script>
+</body>
+</html>
