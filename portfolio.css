@@ -28,11 +28,11 @@
 @media screen and (max-width: 768px){
     h1.home-title{
       color: green;
-      font-size: 3em;
+      font-size: 2.5em;
     }
 
     .list-group-item{
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     i.fa{
@@ -42,11 +42,11 @@
 @media screen and (min-width: 320px) and (max-width: 480px){
     h1.home-title{
       color: blue;
-      font-size: 2.5em;
+      font-size: 2em;
     }
     
     .list-group-item{
-        font-size: 1em;
+        font-size: 0.5em;
     }
 
     i.fa{
